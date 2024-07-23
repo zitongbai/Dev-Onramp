@@ -41,7 +41,7 @@
 * 如果你在Linux中（例如ubuntu），快捷键`ctrl+alt+T`；
 * 如果你在Windows中，则需要打开miniforge prompt，可以在搜索栏中搜索找到，如下图
 
-![miniforge prompt](.\mdFiles\miniforge prompt.png)
+![miniforgeprompt](.\mdFiles\miniforge prompt.png)
 
 在弹出的命令行中输入以下命令：
 
@@ -96,7 +96,7 @@ Mujoco是Google DeepMind的一个仿真引擎，我们将使用它来仿真机�
 
 根据你使用的操作系统，选择合适的安装方式：[Pytorch官网](https://pytorch.org/)。如果电脑上有GPU，推荐安装GPU版本的Pytorch。
 
-例如，在一个有GPU的Linux系统上，可以使用以下命令安装Pytorch：
+例如，在一个有GPU的**Linux系统**上，可以使用以下命令安装Pytorch（请不要直接复制，点进Pytorch官网选择与你系统情况相符的下载方式）：
 
 ```shell
 (myenv) $ pip3 install torch torchvision torchaudio
