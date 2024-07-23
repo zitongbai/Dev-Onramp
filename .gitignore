@@ -162,3 +162,5 @@ cython_debug/
 .idea/
 
 ur5e_with_robotiq_2f85/
+
+*.pt

@@ -36,7 +36,14 @@
 
 安装Miniforge的方法为：从Miniforge的github仓库下载Miniforge的安装包：[Miniforge](https://github.com/conda-forge/miniforge#miniforge3)下载相应操作系统的安装包并安装。
 
-安装完成后，打开命令行（windows中需要打开miniforge prompt），输入以下命令：
+安装完成后，打开命令行
+
+* 如果你在Linux中（例如ubuntu），快捷键`ctrl+alt+T`；
+* 如果你在Windows中，则需要打开miniforge prompt，可以在搜索栏中搜索找到，如下图
+
+![miniforge prompt](.\mdFiles\miniforge prompt.png)
+
+在弹出的命令行中输入以下命令：
 
 ```shell
 conda create -n myenv python=3.10
@@ -137,6 +144,20 @@ Setup complete ✅ (20 CPUs, 15.4 GB RAM, 121.1/230.0 GB disk)
 - Python Extension Pack
 - Jupyter
 
+注意！！！
+
+在写代码时，不建议用vscode打开单个文件，建议使用vscode打开项目所在的文件夹。
+
+* 在Linux中，可以先在命令行中cd到项目所在的路径，然后通过如下命令在当前路径下打开vscode
+
+```shell
+code .
+```
+
+* 在Windows中，可以通过如下的方式打开：
+
+![打开vscode](\mdFiles\打开vscode.png)
+
 ## 6. 安装Git
 
 在windows上，可以直接从[Git官网](https://git-scm.com/download/win)下载并安装。
@@ -160,7 +181,9 @@ sudo apt install git
 git clone https://github.com/zitongbai/Dev-Onramp.git
 ```
 
-然后，在`Dev-Onramp`目录下打开命令行终端，或者在命令行终端打开到`Dev-Onramp`目录。
+然后，在`Dev-Onramp`目录下打开命令行终端，或者在命令行终端打开到`Dev-Onramp`目录。如果你使用的是Windows，那么在这一步你需要打开的是miniforge prompt（具体操作见上面），参考下图的方法在命令行终端打开到`Dev-Onramp`目录：
+
+![prompt](.\mdFiles\prompt.png)
 
 激活conda环境：
 
@@ -174,9 +197,6 @@ conda activate myenv
 (myenv) $ python setup_scene.py
 ```
 
-提示：
-- 在vsocde中，可以使用Ctrl+`（键盘上esc下面那个建）打开命令行终端
-
 这个命令会在当前目录下生成一个名为`ur5e_with_robotiq_2f85`的文件夹，里面包含了一个机械臂的模型与Mujoco的场景。
 
 运行如下命令，检测场景是否设置成功：
@@ -189,6 +209,6 @@ conda activate myenv
 
 ## 2. 各个部分的学习
 
-在`Dev-Onramp`目录下，有若干个Jupyter Notebook文件。请用vscode打开它们并按照顺序学习。
+在`Dev-Onramp`目录下，有若干个Jupyter Notebook文件。请**用vscode打开项目文件夹**再打开它们并按照顺序学习。
 
 - Task 1: 仿真的基本概念与方法
