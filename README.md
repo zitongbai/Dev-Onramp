@@ -36,6 +36,8 @@
 
 安装Miniforge的方法为：从Miniforge的github仓库下载Miniforge的安装包：[Miniforge](https://github.com/conda-forge/miniforge#miniforge3)下载相应操作系统的安装包并安装。
 
+Linux中安装时问yes or not的，一律写yes；安装完成之后，在**新的窗口**中输入`conda env list`验证安装是否有效；安装完成之后可以输入`conda config --set auto_activate_base false`从而关闭conda环境自动激活。
+
 安装完成后，打开命令行
 
 * 如果你在Linux中（例如ubuntu），快捷键`ctrl+alt+T`；
